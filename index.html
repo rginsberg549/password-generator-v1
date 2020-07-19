@@ -19,12 +19,33 @@
         </div>
         
         <div class="row border-bottom mt-4">
-            <div class="col-12 border rounded text-center m-4">
-                <h5 class="mt-3">Your Secure Password</h5>
-                <h6 class="password m-5">Password Placeholder</h6>
-                <button type="button" class="btn btn-light btn-lg w-50">Generate Password</button>
+            <div class="col-12 border rounded text-center text-wrap m-4">
+                <h5 class="mt-3">Your Secure Randomly Generated Password</h5>
+                <h6 class="password m-5">Click the button below to generate your password</h6>
+                <div class="row">
+                        <div class="col-3 mx-auto">
+                            <input type="checkbox" class="lowercase" id="lowercase">
+                            <label class="" for="includeLowercase">Lowercase</label>
+                          </div>
 
+                          <div class="col-3 mx-auto">
+                            <input type="checkbox" class="uppercase" id="uppercase">
+                            <label class="" for="includeUppercase">Uppercase</label>
+                          </div>
 
+                          <div class="col-3 mx-auto">
+                            <input type="checkbox" class="specialchars" id="specialchars">
+                            <label class="" for="includeSpecialChars">Special</label>
+                          </div>
+
+                          <div class="col-3 mx-auto">
+                            <input type="checkbox" class="numbers" id="numbers">
+                            <label class="" for="includeNumbers">Numbers</label>
+                          </div>
+                </div>
+                
+                <button type="button" class="generate-password-btn btn btn-light btn-lg w-50 my-3">Generate Password</button>
+                
             </div>
         </div>
 
