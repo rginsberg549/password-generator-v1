@@ -8,47 +8,48 @@
     <title>Password Generator</title>
 </head>
 <body>
-    
+
     <nav class="navbar navbar-light bg-light">
         <span class="navbar-brand mb-0 h1 mx-auto">Password Generator</span>
       </nav>
     
     <div class="container">
-        <div class="row border-bottom mt-4">
-            <h1 class="col-12">Generate a Password</h1>
+    
+        <div class="row border-bottom m-4">
+            <h1 class="col-sm-12">Generate a Password</h1>
         </div>
         
-        <div class="row border-bottom mt-4">
-            <div class="col-12 border rounded text-center text-wrap m-4">
-                <h5 class="mt-3">Your Secure Randomly Generated Password</h5>
-                <h6 class="password m-5">Click the button below to generate your password</h6>
-                <div class="row">
-                        <div class="col-3 mx-auto">
-                            <input type="checkbox" class="lowercase" id="lowercase">
-                            <label class="" for="includeLowercase">Lowercase</label>
-                          </div>
-
-                          <div class="col-3 mx-auto">
-                            <input type="checkbox" class="uppercase" id="uppercase">
-                            <label class="" for="includeUppercase">Uppercase</label>
-                          </div>
-
-                          <div class="col-3 mx-auto">
-                            <input type="checkbox" class="specialchars" id="specialchars">
-                            <label class="" for="includeSpecialChars">Special</label>
-                          </div>
-
-                          <div class="col-3 mx-auto">
-                            <input type="checkbox" class="numbers" id="numbers">
-                            <label class="" for="includeNumbers">Numbers</label>
-                          </div>
+        <div class="row m-4">
+            <div class="col-sm-12 text-center border border-rounded">
+                    <h5 class="mt-3">Your Secure Randomly Generated Password</h5>
+                    <h6 class="password m-5 wrap-text">Click the button below to generate your password</h6>
+            
+            <div class="row">
+                <div class="col-sm-12 mx-auto">
+                    <input type="checkbox" class="lowercase" id="lowercase">
+                    <label class="" for="includeLowercase">Lowercase</label>
                 </div>
                 
-                <button type="button" class="generate-password-btn btn btn-light btn-lg w-50 my-3">Generate Password</button>
+                <div class="col-sm-12 mx-auto">
+                    <input type="checkbox" class="uppercase" id="uppercase">
+                    <label class="" for="includeUppercase">Uppercase</label>
+                </div>
                 
+                <div class="col-sm-12 mx-auto">
+                    <input type="checkbox" class="specialchars" id="specialchars">
+                    <label class="" for="includeSpecialChars">Special</label>
+                </div>
+
+                <div class="col-sm-12 mx-auto">
+                    <input type="checkbox" class="numbers" id="numbers">
+                    <label class="" for="includeNumbers">Numbers</label>
+                </div>
+            </div>
+            
+            <div class="row">
+                <button class="generate-password-btn btn btn-light btn-lg mx-auto mt-3 mb-3" type="button" >Generate Password</button>
             </div>
         </div>
-
     </div>
 
 
