@@ -10,59 +10,65 @@
 <body>
 
     <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1 mx-auto">Password Generator</span>
+        <span class="navbar-brand mb-0 h1 mx-auto">Welcome to the Random Password Generator</span>
       </nav>
     
-    <div class="container border text-center">
+    <div class="container border text-center mt-3">
     
-        <div class="row">
-            <h1 class="col-sm-12 mx-auto">Generate a Password</h1>
+        <div class="row mt-3">
+            <h1 class="col-12 mx-auto">Generate a Random Password</h1>
         </div>
         
         <div class="row">
             <div class="col-12">
-                    <h5 class="m-5">Select Your Password Requirements Below</h5>
+                    <h6 class="m-3">Select Your Password Requirements Below</h6>
             </div>
         </div>
 
 
-        <div class="row">
+        <div class="row mt-3">
 
-            <div class="col-12 mx-auto">
-                <input type="number" class="form-control" id="passwordLength" min="8" max="128">
+            <div class="col-12">
+                <input type="number" class="form-control" id="passwordLength" min="8" max="128" placeholder="Enter a number between 8 and 128">
                 <label for="passwordLength">Number of Characters</label>
               </div>
  
-            <div class="col-sm-6">
-                <input type="checkbox" class="form-control" id="lowercase">
-                <label class="" for="includeLowercase">Lowercase</label>
+            <div class="col-sm-3 mt-3">
+                <input type="checkbox" class="" id="lowercase">
+                <br>
+                <label class="" for="includeLowercase">Lowercase Letters</label>
             </div>
                 
-            <div class="col-sm-6">
-                <input type="checkbox" class="form-control" id="uppercase">
-                <label class="" for="includeUppercase">Uppercase</label>
+            <div class="col-sm-3 mt-3">
+                <input type="checkbox" class="" id="uppercase">
+                <br>
+                <label class="" for="includeUppercase">Uppercase Letters</label>
             </div>
                 
-            <div class="col-sm-6">
-                <input type="checkbox" class="form-control" id="special">
-                <label class="" for="includeSpecialChars">Special</label>
+            <div class="col-sm-3 mt-3">
+                <input type="checkbox" class="" id="special">
+                <br>
+                <label class="" for="includeSpecialChars">Special Characters</label>
             </div>
 
-            <div class="col-sm-6">
-                <input type="checkbox" class="form-control" id="numbers">
+            <div class="col-sm-3 mt-3">
+                <input type="checkbox" class="" id="numbers">
+                <br>
                 <label class="" for="includeNumbers">Numbers</label>
             </div>
          </div>
 
-         <div class="row">
+         <div class="row mt-3">
             <button class="col-12 generate-password-btn btn btn-light btn-lg mx-auto" type="button" >Generate Password</button>
         </div>
 
         <div class="row m-3">
-            <h5 class=" col-12 mx-auto password"></h5>
+            <h5 class=" col-12 mx-auto password text-danger"></h5>
         </div>
     </div>
 </div>
+
+
     <script src="script.js"></script>
     
 </body>
