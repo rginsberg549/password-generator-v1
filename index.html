@@ -13,51 +13,56 @@
         <span class="navbar-brand mb-0 h1 mx-auto">Password Generator</span>
       </nav>
     
-    <div class="container">
+    <div class="container border text-center">
     
-        <div class="row border-bottom m-4">
-            <h1 class="col-sm-12">Generate a Password</h1>
+        <div class="row">
+            <h1 class="col-sm-12 mx-auto">Generate a Password</h1>
         </div>
         
-        <div class="row m-4">
-            <div class="col-sm-12 text-center border border-rounded">
-                    <h5 class="mt-3">Your Secure Randomly Generated Password</h5>
-                    <h6 class="password m-5 wrap-text">Click the button below to generate your password</h6>
-            
-            <div class="row">
-                <div class="col-sm-12 mx-auto">
-                    <input type="checkbox" class="lowercase" id="lowercase" checked="">
-                    <label class="" for="includeLowercase">Lowercase</label>
-                </div>
-                
-                <div class="col-sm-12 mx-auto">
-                    <input type="checkbox" class="uppercase" id="uppercase" checked="">
-                    <label class="" for="includeUppercase">Uppercase</label>
-                </div>
-                
-                <div class="col-sm-12 mx-auto">
-                    <input type="checkbox" class="specialchars" id="special">
-                    <label class="" for="includeSpecialChars">Special</label>
-                </div>
-
-                <div class="col-sm-12 mx-auto">
-                    <input type="checkbox" class="numbers" id="numbers">
-                    <label class="" for="includeNumbers">Numbers</label>
-                </div>
-            </div>
-            
-            <div class="row">
-                <button class="generate-password-btn btn btn-light btn-lg mx-auto mt-3 mb-3" type="button" >Generate Password</button>
+        <div class="row">
+            <div class="col-12">
+                    <h5 class="m-5">Select Your Password Requirements Below</h5>
             </div>
         </div>
+
+
+        <div class="row">
+
+            <div class="col-12 mx-auto">
+                <input type="number" class="form-control" id="passwordLength" min="8" max="128">
+                <label for="passwordLength">Number of Characters</label>
+              </div>
+ 
+            <div class="col-sm-6">
+                <input type="checkbox" class="form-control" id="lowercase">
+                <label class="" for="includeLowercase">Lowercase</label>
+            </div>
+                
+            <div class="col-sm-6">
+                <input type="checkbox" class="form-control" id="uppercase">
+                <label class="" for="includeUppercase">Uppercase</label>
+            </div>
+                
+            <div class="col-sm-6">
+                <input type="checkbox" class="form-control" id="special">
+                <label class="" for="includeSpecialChars">Special</label>
+            </div>
+
+            <div class="col-sm-6">
+                <input type="checkbox" class="form-control" id="numbers">
+                <label class="" for="includeNumbers">Numbers</label>
+            </div>
+         </div>
+
+         <div class="row">
+            <button class="col-12 generate-password-btn btn btn-light btn-lg mx-auto" type="button" >Generate Password</button>
+        </div>
+
+        <div class="row m-3">
+            <h5 class=" col-12 mx-auto password"></h5>
+        </div>
     </div>
-
-
-
-    
-
-    
-
+</div>
     <script src="script.js"></script>
     
 </body>
