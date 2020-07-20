@@ -12,7 +12,8 @@ var isNumeric = document.querySelector("#numbers");
 var generatePasswordBtn = document.querySelector(".generate-password-btn");
 
 //Element used to populate random password back to the user
-var userPassword = document.querySelector(".password")
+var userPassword = document.querySelector(".password");
+var userError = document.querySelector(".error");
 
 //This function is used to generate the list of characters that will be used for the password
 //We grab a random number and target the index of this list
@@ -66,24 +67,31 @@ function generatePassword() {
 
     //Store the passwordLength into the passwordLength variable
     var passwordLength = numChars.value;
-    
-    //Declare variable to store the randomly generated password
-    var password = '';
-    
-    //Loop through the charList and pick a random index and pick a character
-    //and add it to the password variable
-    for (let index = 0; index < passwordLength; index++) {
+
+    //Validation make sure user entered in a number from 8-128
+    if (passwordLength < 8 || passwordLength > 128) {
+        userError.textContent = "Please enter a value that is between 8 and 128";
+        userPassword.textContent = "";
+    } else {
+        //Set new variable to be returned to the end user with their random password
+        var password = '';
+        userError.textContent = "";
+
+        
+        //Loop through the charList and pick a random index and pick a character
+        //and add it to the password variable
+        
+        for (let index = 0; index < passwordLength; index++) {
             var item = charList[Math.floor(Math.random()*charList.length)];
             password += item;
         }
-
-    //Ensure the user enters in a defined number of characters
-    if (password == '') {
-        userPassword.textContent = "Please specify the number of characters between 8 and 128";
-    } else {
-        //Return randomly generated password to the user
+        
         userPassword.textContent = password;
+
     }
+    
+    //Declare variable to store the randomly generated password
+    
 }
 
 //Event listeners
